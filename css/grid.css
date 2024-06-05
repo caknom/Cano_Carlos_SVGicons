@@ -21,7 +21,6 @@ By setting box-sizing: inherit, the selected elements inherit the box-sizing pro
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-column-gap: 30px;
-  max-width: auto;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
