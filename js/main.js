@@ -1,6 +1,6 @@
 console.log("JS file connected");
 
-const iconCon = document.querySelectorAll(".icon-con svg");
+const iconCon = document.querySelectorAll("#icon-con svg");
 console.log(iconCon);
 
 function logId() {

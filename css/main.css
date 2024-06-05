@@ -12,9 +12,9 @@ Billy Beer - Interactive SVG Icons Build
 
  /* 1. General Styles */
 
-* {
-    /* border: solid 1px; */
-}
+/* * {
+    border: solid 1px;
+} */
 
 .hidden {
     display: none;
@@ -125,8 +125,12 @@ h4 {
 
 /*--- 3. Icon section ---*/
 
+#icon-con {
+    margin: 0;
+}
+
 .icon-box {
-    margin: 30px;
+    margin: 10px;
     border: solid 5px #E0B997;
     border-style: double;
 }
