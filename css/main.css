@@ -36,7 +36,6 @@ p, h1, h2, h3, h4, h5, section, div {
 
 body {
     font-family: "Merriweather Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
@@ -150,8 +149,7 @@ h4 {
 
 #icon-1977:hover .cls-2 {
     fill: #583024;
-    transform: scale(106%);
-    animation: yearanima 4s ease infinite;
+    transform: scale(1.04);
 }
 
 #icon-1977 .cls-1 {
@@ -161,14 +159,7 @@ h4 {
 
 #icon-1977:hover .cls-1 {
     fill: #E0B997;
-    transform: scale(106%);
-    animation: yearanima 4s ease infinite;
-}
-
-@keyframes yearanima {
-    45% {transform: rotateX(0deg);}
-    50% {transform: rotateX(360deg);}
-    55% {transform: rotateX(0deg);}
+    transform: scale(1.04);
 }
 
 /* bcap icon */
@@ -186,7 +177,7 @@ h4 {
 
 #icon-bcap:hover .cls-2 {
     fill: #583024;
-    transform: scale(106%);
+    transform: scale(1.06);
 }
 
 #icon-bcap .cls-1 {
@@ -196,7 +187,7 @@ h4 {
 
 #icon-bcap:hover .cls-1 {
     fill: #E0B997;
-    transform: scale(106%);
+    transform: scale(1.06);
 }
 
 #icon-bcap #bcap-out-stroke {
@@ -232,7 +223,7 @@ h4 {
 
 #icon-beer:hover .cls-2 {
     fill: #583024;
-    transform: scale(106%);
+    transform: scale(1.06);
 }
 
 #icon-beer .cls-1 {
@@ -242,13 +233,13 @@ h4 {
 
 #icon-beer:hover .cls-1 {
     fill: #E0B997;
-    transform: scale(106%);
+    transform: scale(1.06);
 }
 
 @keyframes beerStar1 {
-    0% {transform: scale(100%);}
-    54% {transform: scale(80%);}
-    100% {transform: scale(100%);}
+    0% {transform: scale(1);}
+    54% {transform: scale(0.8);}
+    100% {transform: scale(1);}
 }
 
 #icon-beer:hover #beer-star1-color {
@@ -262,9 +253,9 @@ h4 {
 }
 
 @keyframes beerStar2 {
-    0% {transform: scale(100%);}
-    48% {transform: scale(120%);}
-    100% {transform: scale(100%);}
+    0% {transform: scale(1);}
+    48% {transform: scale(1.2);}
+    100% {transform: scale(1);}
 }
 
 #icon-beer:hover #beer-star2-color {
@@ -278,9 +269,9 @@ h4 {
 }
 
 @keyframes beerStar3 {
-    0% {transform: scale(100%);}
-    37% {transform: scale(120%);}
-    100% {transform: scale(100%);}
+    0% {transform: scale(1);}
+    37% {transform: scale(1.2);}
+    100% {transform: scale(1);}
 }
 
 #icon-beer:hover #beer-star3-color {
@@ -294,9 +285,9 @@ h4 {
 }
 
 @keyframes beerStar4 {
-    0% {transform: scale(100%);}
-    62% {transform: scale(80%);}
-    100% {transform: scale(100%);}
+    0% {transform: scale(1);}
+    62% {transform: scale(0.8);}
+    100% {transform: scale(1);}
 }
 
 #icon-beer:hover #beer-star4-color {
@@ -324,7 +315,7 @@ h4 {
 
 #icon-cheers:hover .cls-2 {
     fill: #583024;
-    transform: scale(104%);
+    transform: scale(1.04);
 }
 
 #icon-cheers .cls-1 {
@@ -334,7 +325,7 @@ h4 {
 
 #icon-cheers:hover .cls-1 {
     fill: #E0B997;
-    transform: scale(104%);
+    transform: scale(1.04);
 }
 
 @keyframes cheersanima1 {
@@ -370,9 +361,9 @@ h4 {
 }
 
 @keyframes cheersspark {
-    0% {opacity: 100%; transform: scale(100%);}
-    10% {opacity: 100%;transform: scale(125%);}
-    20% {opacity: 0%; transform: scale(132%);}
+    0% {opacity: 100%; transform: scale(1);}
+    10% {opacity: 100%;transform: scale(1.25);}
+    20% {opacity: 0%; transform: scale(1.32);}
     100% {opacity: 0%;}
 }
 
@@ -396,7 +387,7 @@ h4 {
 
 #icon-lupulus:hover .cls-2 {
     fill: #583024;
-    transform: scale(106%);
+    transform: scale(1.06);
 }
 
 #icon-lupulus .cls-1 {
@@ -405,7 +396,7 @@ h4 {
 }
 
 #icon-lupulus:hover .cls-1 {
-    transform: scale(104%);
+    transform: scale(1.04);
 }
 
 #icon-lupulus:hover {
@@ -420,7 +411,7 @@ h4 {
 }
 
 @keyframes lupulusanima {
-    to {fill:#E0B997};
+    to {fill:#E0B997;}
 }
 
 #icon-lupulus:hover #lupulus-color1 .cls-1 {
@@ -458,7 +449,7 @@ h4 {
 
 #icon-water:hover .cls-2 {
     fill: #583024;
-    transform: scale(106%);
+    transform: scale(1.06);
 }
 
 #icon-water .cls-1 {
@@ -468,7 +459,7 @@ h4 {
 
 #icon-water:hover .cls-1 {
     fill: #E0B997;
-    transform: scale(106%);
+    transform: scale(1.06);
 }
 
 #icon-water:hover #water-stroke {
@@ -487,9 +478,9 @@ h4 {
 }
 
 @keyframes waterStar1 {
-    0% {transform: scale(100%);}
-    54% {transform: scale(80%);}
-    100% {transform: scale(100%);}
+    0% {transform: scale(1);}
+    54% {transform: scale(0.8);}
+    100% {transform: scale(1);}
 }
 
 #icon-water:hover #water-star1-color {
@@ -503,9 +494,9 @@ h4 {
 }
 
 @keyframes waterStar2 {
-    0% {transform: scale(100%);}
-    48% {transform: scale(106%);}
-    100% {transform: scale(100%);}
+    0% {transform: scale(1);}
+    48% {transform: scale(1.06);}
+    100% {transform: scale(1);}
 }
 
 #icon-water:hover #water-star2-color {
@@ -519,9 +510,9 @@ h4 {
 }
 
 @keyframes waterStar3 {
-    0% {transform: scale(80%);}
-    37% {transform: scale(60%);}
-    100% {transform: scale(80%);}
+    0% {transform: scale(1);}
+    37% {transform: scale(0.8);}
+    100% {transform: scale(1);}
 }
 
 #icon-water:hover #water-star3-color {
