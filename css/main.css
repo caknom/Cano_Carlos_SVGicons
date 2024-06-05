@@ -6,17 +6,526 @@ Billy Beer - Interactive SVG Icons Build
     CSS Guide
 
     1.  General Styles
-    2.  Main Nav
-    3.  Main Hero Image
-    4.  Main Hero Image Contact
-    5.  Why Couples Resort
-    6.  About & FAQ
-    7.  Contact Form
-    8.  Footer
+    2.  Main section
+    3.  Icon section
  */
 
  /* 1. General Styles */
 
+* {
+    /* border: solid 1px; */
+}
+
 .hidden {
     display: none;
+}
+
+html {
+    box-sizing: border-box; 
+}
+
+img, embed, object, video, picture {
+    max-width: 100%; 
+}
+
+p, h1, h2, h3, h4, h5, section, div {
+    margin: 0px; 
+    padding: 0px;
+    max-width: 100%;
+ }
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    background-color: #FDF9F3;
+}
+
+/* 2. Main section */
+
+h1 {
+    font-weight: 900;
+    font-size: 36px;
+    color: #583024;
+    text-align: center;
+    margin: 40px 30px;
+}
+
+.head-box {
+    background-color: #E0B997;
+    border: solid #583024;
+}
+
+.head-box p {
+    margin: 10px 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.text-block {
+    color: #583024;
+    margin: 60px 30px 20px;
+}
+
+h3 {
+    font-size: 26px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h4 {
+    font-size: 14px;
+    text-align: center;
+    background-color: #583024;
+    color: #E0B997;
+    padding: 20px 40px;
+    margin-top: 50px;
+}
+
+.logo-cont {
+    width: 80%;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+#logo-text {
+    transition: all 0.5s ease;
+    transform-origin: center;
+    animation: floatLogoTxt 3s ease-out infinite;
+}
+
+
+@keyframes floatLogoTxt {
+    50% {transform: translateY(7px);}
+}
+
+.what-svg {
+    margin: 70px 34px 76px;
+    padding: 14px 9px;
+    background-color: #583024;
+    color: #FDF9F3;
+    animation: shakeWhatSVG 4.5s ease-out infinite;
+    box-shadow: 0px 5px 5px #583024;
+    border: solid 2px #FDF9F3;
+}
+
+@keyframes shakeWhatSVG {
+    0% {transform: rotate(0deg);}
+    2% {transform: rotate(1deg);}
+    4% {transform: rotate(-1deg);}
+    6% {transform: rotate(0deg);}
+}
+
+/*--- 3. Icon section ---*/
+
+.icon-box {
+    margin: 30px;
+    border: solid 5px #E0B997;
+    border-style: double;
+}
+
+/* 1977 icon */
+
+#icon-1977 {
+    display: block;
+    max-width: 320px;
+    margin: 20px auto;
+}
+
+#icon-1977 .cls-2 {
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#icon-1977:hover .cls-2 {
+    fill: #583024;
+    transform: scale(106%);
+    animation: yearanima 4s ease infinite;
+}
+
+#icon-1977 .cls-1 {
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#icon-1977:hover .cls-1 {
+    fill: #E0B997;
+    transform: scale(106%);
+    animation: yearanima 4s ease infinite;
+}
+
+@keyframes yearanima {
+    45% {transform: rotateX(0deg);}
+    50% {transform: rotateX(360deg);}
+    55% {transform: rotateX(0deg);}
+}
+
+/* bcap icon */
+
+#icon-bcap {
+    display: block;
+    max-width: 320px;
+    margin: 20px auto;
+}
+
+#icon-bcap .cls-2 {
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#icon-bcap:hover .cls-2 {
+    fill: #583024;
+    transform: scale(106%);
+}
+
+#icon-bcap .cls-1 {
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#icon-bcap:hover .cls-1 {
+    fill: #E0B997;
+    transform: scale(106%);
+}
+
+#icon-bcap #bcap-out-stroke {
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#icon-bcap:hover #bcap-out-stroke {
+    transform: rotate(90deg);
+}
+
+#icon-bcap #bcap-out-color {
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#icon-bcap:hover #bcap-out-color {
+    transform: rotate(90deg);
+}
+
+/* beer icon */
+
+#icon-beer {
+    display: block;
+    max-width: 320px;
+    margin: 20px auto;
+}
+
+#icon-beer .cls-2 {
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#icon-beer:hover .cls-2 {
+    fill: #583024;
+    transform: scale(106%);
+}
+
+#icon-beer .cls-1 {
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#icon-beer:hover .cls-1 {
+    fill: #E0B997;
+    transform: scale(106%);
+}
+
+@keyframes beerStar1 {
+    0% {transform: scale(100%);}
+    54% {transform: scale(80%);}
+    100% {transform: scale(100%);}
+}
+
+#icon-beer:hover #beer-star1-color {
+    transform-origin: 30% 25%;
+    animation: beerStar1 2s ease alternate infinite;
+}
+
+#icon-beer:hover #beer-star1-stroke {
+    transform-origin: 30% 25%;
+    animation: beerStar1 2s ease alternate infinite;
+}
+
+@keyframes beerStar2 {
+    0% {transform: scale(100%);}
+    48% {transform: scale(120%);}
+    100% {transform: scale(100%);}
+}
+
+#icon-beer:hover #beer-star2-color {
+    transform-origin: 22% 30%;
+    animation: beerStar2 2s ease alternate infinite;
+}
+
+#icon-beer:hover #beer-star2-stroke {
+    transform-origin: 22% 30%;
+    animation: beerStar2 2s ease alternate infinite;
+}
+
+@keyframes beerStar3 {
+    0% {transform: scale(100%);}
+    37% {transform: scale(120%);}
+    100% {transform: scale(100%);}
+}
+
+#icon-beer:hover #beer-star3-color {
+    transform-origin: 70% 35%;
+    animation: beerStar3 2s ease alternate infinite;
+}
+
+#icon-beer:hover #beer-star3-stroke {
+    transform-origin: 70% 35%;
+    animation: beerStar3 2s ease alternate infinite;
+}
+
+@keyframes beerStar4 {
+    0% {transform: scale(100%);}
+    62% {transform: scale(80%);}
+    100% {transform: scale(100%);}
+}
+
+#icon-beer:hover #beer-star4-color {
+    transform-origin: 64% 48%;
+    animation: beerStar4 2s ease alternate infinite;
+}
+
+#icon-beer:hover #beer-star4-stroke {
+    transform-origin: 64% 48%;
+    animation: beerStar4 2s ease alternate infinite;
+}
+
+/* cheers icon */
+
+#icon-cheers {
+    display: block;
+    max-width: 320px;
+    margin: 20px auto;
+}
+
+#icon-cheers .cls-2 {
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#icon-cheers:hover .cls-2 {
+    fill: #583024;
+    transform: scale(104%);
+}
+
+#icon-cheers .cls-1 {
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#icon-cheers:hover .cls-1 {
+    fill: #E0B997;
+    transform: scale(104%);
+}
+
+@keyframes cheersanima1 {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#icon-cheers:hover #cheers-g1-stroke {
+    transform-origin: 35% 70%;
+    animation: cheersanima1 2s ease-in-out infinite;
+}
+
+#icon-cheers:hover #cheers-g1-color {
+    transform-origin: 35% 70%;
+    animation: cheersanima1 2s ease-in-out infinite;
+}
+
+@keyframes cheersanima2 {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#icon-cheers:hover #cheers-g2-stroke {
+    transform-origin: 66% 70%;
+    animation: cheersanima2 2s ease-in-out infinite;
+}
+
+#icon-cheers:hover #cheers-g2-color {
+    transform-origin: 66% 70%;
+    animation: cheersanima2 2s ease-in-out infinite;
+}
+
+@keyframes cheersspark {
+    0% {opacity: 100%; transform: scale(100%);}
+    10% {opacity: 100%;transform: scale(125%);}
+    20% {opacity: 0%; transform: scale(132%);}
+    100% {opacity: 0%;}
+}
+
+#icon-cheers:hover #cheers-spark {
+    transform-origin: 50% 45%;
+    animation: cheersspark 2s linear infinite;
+}
+
+/* lupulus icon */
+
+#icon-lupulus {
+    display: block;
+    max-width: 320px;
+    margin: 20px auto;
+}
+
+#icon-lupulus .cls-2 {
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#icon-lupulus:hover .cls-2 {
+    fill: #583024;
+    transform: scale(106%);
+}
+
+#icon-lupulus .cls-1 {
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#icon-lupulus:hover .cls-1 {
+    transform: scale(104%);
+}
+
+#icon-lupulus:hover {
+    animation: lupulusshake 4s ease-in-out infinite;
+}
+
+@keyframes lupulusshake {
+    20% {transform: rotate(0deg);}
+    22% {transform: rotate(-5deg);}
+    26% {transform: rotate(5deg);}
+    28% {transform: rotate(0deg);}
+}
+
+@keyframes lupulusanima {
+    to {fill:#E0B997};
+}
+
+#icon-lupulus:hover #lupulus-color1 .cls-1 {
+    transform-origin: center;
+    animation: lupulusanima 0.3s 0s ease-in-out forwards;
+}
+
+#icon-lupulus:hover #lupulus-color2 .cls-1 {
+    transform-origin: center;
+    animation: lupulusanima 0.3s 0.3s ease-in-out forwards;
+}
+
+#icon-lupulus:hover #lupulus-color3 .cls-1 {
+    transform-origin: center;
+    animation: lupulusanima 0.3s 0.6s ease-in-out forwards;
+}
+
+#icon-lupulus:hover #lupulus-color4 .cls-1 {
+    transform-origin: center;
+    animation: lupulusanima 0.3s 0.9s ease-in-out forwards;
+}
+
+/* water icon */
+
+#icon-water {
+    display: block;
+    max-width: 320px;
+    margin: 20px auto;
+}
+
+#icon-water .cls-2 {
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#icon-water:hover .cls-2 {
+    fill: #583024;
+    transform: scale(106%);
+}
+
+#icon-water .cls-1 {
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#icon-water:hover .cls-1 {
+    fill: #E0B997;
+    transform: scale(106%);
+}
+
+#icon-water:hover #water-stroke {
+    transform-origin: 50% 23%;
+    animation: waterDrop 2s linear infinite;
+}
+
+#icon-water:hover #water-color {
+    transform-origin: 50% 23%;
+    animation: waterDrop 2s linear infinite;
+}
+
+@keyframes waterDrop {
+    25% {transform: rotate(-4deg);}
+    75% {transform: rotate(4deg);}
+}
+
+@keyframes waterStar1 {
+    0% {transform: scale(100%);}
+    54% {transform: scale(80%);}
+    100% {transform: scale(100%);}
+}
+
+#icon-water:hover #water-star1-color {
+    transform-origin: 33% 30%;
+    animation: beerStar1 2s ease alternate infinite;
+}
+
+#icon-water:hover #water-star1-stroke {
+    transform-origin: 33% 30%;
+    animation: beerStar1 2s ease alternate infinite;
+}
+
+@keyframes waterStar2 {
+    0% {transform: scale(100%);}
+    48% {transform: scale(106%);}
+    100% {transform: scale(100%);}
+}
+
+#icon-water:hover #water-star2-color {
+    transform-origin: 42% 30%;
+    animation: beerStar2 2s ease alternate infinite;
+}
+
+#icon-water:hover #water-star2-stroke {
+    transform-origin: 42% 30%;
+    animation: beerStar2 2s ease alternate infinite;
+}
+
+@keyframes waterStar3 {
+    0% {transform: scale(80%);}
+    37% {transform: scale(60%);}
+    100% {transform: scale(80%);}
+}
+
+#icon-water:hover #water-star3-color {
+    transform-origin: 66% 35%;
+    animation: beerStar3 2s ease alternate infinite;
+}
+
+#icon-water:hover #water-star3-stroke {
+    transform-origin: 66% 35%;
+    animation: beerStar3 2s ease alternate infinite;
 }
